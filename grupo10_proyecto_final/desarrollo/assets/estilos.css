@@ -23,18 +23,47 @@
 }
 /*-----------------------------------------------------*/
 
-body, input, select, textarea {
-    color: #14184B !important;
+* {
+    color: #14184B;
 }
 
-a {
-    color: #14184B !important;
+.nav-item a{
+    color: #14184B;
 }
 
-a:hover {
-    color: #0056b3 !important; 
+.nav-item .btn.dropdown-toggle {
+    color: #14184B;
 }
 
-#resaltado {
+.offcanvas {
+    width: 50vw !important; 
+}
+
+.bg-darkblue {
+    background-color: #14184B !important; /*Important para pisar el offcanvas*/
+}
+
+.offcanvas .nav-link {
+    color: #ffffff !important;
+    font-weight: 300;
+}
+
+.font-bold {
     font-weight: 600;
 }
+
+.font-light {
+    font-weight: 300;
+}
+
+.enlace-menu.active {
+    border-color: #E01F2E;
+    color: #E01F2E !important;
+}
+
+#logo {
+    border-radius: 3rem; /*Porque la imagen orriginal tenia los bordes redondeados y las esquinas se ven negras*/
+    height: 3.5rem; 
+    width: auto; 
+}
+

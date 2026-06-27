@@ -6,26 +6,28 @@
     <link rel="stylesheet" href="assets/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" href="">
+    <link rel="icon" href="assets/img/logo.avif">
     <title>Home- UADE Pickup</title>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top bg-pastel px-sm-4 py-2 px-3">
+    <script src="assets/script.js"></script>
+    <header class="navbar navbar-expand-md sticky-top px-sm-4 py-2 px-3">
         <div class="container-fluid p-0"> <div class="ms-md-1">
-                <a href="#home" class="text-decoration-none text-dark">
-                    <img class="logo" src="" alt="logo">
+                <a href="#home" class="text-decoration-none">
+                    <img id="logo" src="assets/img/logo.avif" alt="logo">
                 </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav gap-2"> 
                     
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown d-none d-md-flex">
                         <button class="btn dropdown-toggle border" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Locales
                         </button>
@@ -48,12 +50,34 @@
                     </li>
                 </ul>
             </div>
-
         </div>
     </header>
+
+    <div class="offcanvas offcanvas-end bg-darkblue d-md-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header justify-content-end">
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-3">
+            <ul class="nav flex-column text-center">
+                <li class="nav-item">
+                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Locales</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Puntos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Favoritos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#promos" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Promos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <main>
         <section>
-            <p>Prueba<span id="resaltado"> weight</span></p>
+            <p class="font-light d-none d-md-block">Prueba<span class="font-bold"> weight</span></p>
         </section>
 
     </main>
