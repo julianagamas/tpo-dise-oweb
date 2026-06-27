@@ -13,7 +13,7 @@
 </head>
 <body>
     <script src="assets/script.js"></script>
-    <header class="navbar navbar-expand-md sticky-top px-sm-4 py-2 px-3">
+    <header class="navbar navbar-expand-md sticky-top bg-white px-sm-4 py-2 px-3">
         <div class="container-fluid p-0"> <div class="ms-md-1">
                 <a href="#home" class="text-decoration-none">
                     <img id="logo" src="assets/img/logo.avif" alt="logo">
@@ -60,7 +60,7 @@
         <div class="offcanvas-body px-3">
             <ul class="nav flex-column text-center">
                 <li class="nav-item">
-                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Locales</a>
+                    <a href="#locales" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Locales</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Puntos</a>
@@ -76,8 +76,189 @@
     </div>
 
     <main>
-        <section>
-            <p class="font-light d-none d-md-block">Prueba<span class="font-bold"> weight</span></p>
+        <section id="locales" class="py-4 bg-white rounded-bottom-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="font-light">Bienvenida <span class="font-bold">Martina</span></h1>
+                        <p>¿Dónde querés comprar hoy?</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center gap-2">
+                    <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logostarbucks.png" alt="Logo Starbucks">
+                        <h2 class="fs-4 mt-3">Starbucks</h2>
+                        <p class="d-none d-sm-block mb-sm-1 font-light">Nivel de congestión:</p>
+                        <div class="d-flex gap-1 mt-1">
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle bg-danger"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <h2 class="fs-4 mt-3">Rústica</h2>
+                        <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
+                        <div class="d-flex gap-1">
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle bg-warning"></div>
+                            <div class="semaforo rounded-circle"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <h2 class="fs-4 mt-3">Kioscos</h2>
+                        <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
+                        <div class="d-flex gap-1">
+                            <div class="semaforo rounded-circle bg-success"></div>
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle"></div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <h2 class="fs-4 mt-3">Buffet</h2>
+                        <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
+                        <div class="d-flex gap-1">
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle"></div>
+                            <div class="semaforo rounded-circle bg-danger"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-column align-items-center mt-4 mb-2 mb-sm-3">
+                        <button type="button" class="btn btn-red d-inline-block rounded-4">
+                            Repetir mi último pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="d-none d-sm-block py-3" id="solapamiento">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="assets/img/Banner 1.png" class="d-block w-100" alt="Banner 1: Pedí sin fila">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/Banner 2.png" class="d-block w-100" alt="Banner 2: Puntos">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/Banner-3.png" class="d-block w-100" alt="Banner 3: Starbucks">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="d-block d-sm-none">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="assets/img/Banner-1-mobile.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/Banner-2-mobile.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/Banner-3-mobile.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-3 bg-white" id="promos">
+            <div class="container">
+                <div class="row m-3">
+                    <div class="col-12 d-flex flex-column align-items-center text-center">
+                        <h2>Promos del día</h2>
+                    </div>
+                </div>
+                <div class="row flex-nowrap flex-sm-wrap scroll-horizontal-xs pb-3">
+    
+                    <div class="col-6 col-sm-4 col-md-4 p-1">
+                        <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
+                            
+                            <a href="" class="d-block d-md-none">
+                                <img class="img-fluid contenedor-img" src="assets/img/producto-1.webp" alt="Producto 1">
+                            </a>
+                            <a href="" class="d-none d-md-block w-25 m-3">
+                                <img class="img-fluid rounded-4" src="assets/img/producto-1.webp" alt="Producto 1">
+                            </a>
+                            <div class="p-3">
+                                <h3 class="fs-4 mb-0">$6.950,00<span class="badge bg-red font-light">-50%</span></h3>
+                                <p class="mb-1 text-decoration-line-through">$13.900,00</p>
+                                <p class="font-light mb-0 mb-sm-1">Frutilla Frapuccino Perlas</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 p-1">
+                        <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
+                            
+                            <a href="" class="d-block d-md-none">
+                                <img class="img-fluid contenedor-img" src="assets/img/producto-2.webp" alt="Producto 2">
+                            </a>
+                            <a href="" class="d-none d-md-block w-25 m-3">
+                                <img class="img-fluid rounded-4" src="assets/img/producto-2.webp" alt="Producto 2">
+                            </a>
+                            <div class="p-3">
+                                <h3 class="fs-4 mb-0">$6.950,00<span class="badge bg-red font-light">-50%</span></h3>
+                                <p class="mb-1 text-decoration-line-through">$13.900,00</p>
+                                <p class="font-light mb-0 mb-sm-1">Matcha frío Perlas</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 p-1">
+                        <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
+                            
+                            <a href="" class="d-block d-md-none">
+                                <img class="img-fluid contenedor-img" src="assets/img/producto-3.webp" alt="Producto 3">
+                            </a>
+                            <a href="" class="d-none d-md-block w-25 m-3">
+                                <img class="img-fluid rounded-4" src="assets/img/producto-3.webp" alt="Producto 3">
+                            </a>
+                            <div class="p-3">
+                                <h3 class="fs-4 mb-0">$11.340,00<span class="badge bg-red font-light">-30%</span></h3>
+                                <p class="mb-1 text-decoration-line-through">$16.200,00</p>
+                                <p class="font-light mb-0 mb-sm-1">Latte + Lemon Cake</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-4 col-md-4 p-1">
+                        <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
+                            
+                            <a href="" class="d-block d-md-none">
+                                <img class="img-fluid contenedor-img" src="assets/img/producto-4.webp" alt="Producto 3">
+                            </a>
+                            <a href="" class="d-none d-md-block w-25 m-3">
+                                <img class="img-fluid rounded-4" src="assets/img/producto-4.webp" alt="Producto 3">
+                            </a>
+                            <div class="p-3">
+                                <h3 class="fs-4 mb-0">$9.450,00<span class="badge bg-red font-light">-30%</span></h3>
+                                <p class="mb-1 text-decoration-line-through">$13.500,00</p>
+                                <p class="font-light mb-0 mb-sm-1">2 cuadrados de coco y ddl</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </main>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     /* Sobrescribe la fuente global de Bootstrap */
@@ -21,10 +21,16 @@
   font-weight: 300;
   font-style: normal;
 }
+
 /*-----------------------------------------------------*/
 
 * {
     color: #14184B;
+}
+
+p {
+    font-family: 'Inter';
+    font-size: small;
 }
 
 .nav-item a{
@@ -43,9 +49,34 @@
     background-color: #14184B !important; /*Important para pisar el offcanvas*/
 }
 
+.bg-red {
+    background-color: #E01F2E;
+}
+
 .offcanvas .nav-link {
     color: #ffffff !important;
     font-weight: 300;
+}
+
+.btn.btn-red {
+    border-color: #E01F2E !important;
+    color: #E01F2E !important;
+    background-color: white;
+}
+
+.btn.btn-red:hover {
+    border-color: white;
+    color: #ffffff !important;
+    background-color: #E01F2E !important;
+}
+
+.contenedor-img {
+    height: 50%;
+    width: 100%;
+}
+
+.contenedor-img img {
+    object-fit: cover; /* ¡Esta es la clave! */
 }
 
 .font-bold {
@@ -61,9 +92,58 @@
     color: #E01F2E !important;
 }
 
+.logo-local {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+.semaforo {
+    width: 10px;
+    height: 10px;
+    background-color: #EEE5DC;
+}
+
+
 #logo {
     border-radius: 3rem; /*Porque la imagen orriginal tenia los bordes redondeados y las esquinas se ven negras*/
     height: 3.5rem; 
     width: auto; 
+}
+
+#locales {
+    position: relative;
+    z-index: 3; /* Un número mayor que el carrusel lo pone adelante */
+}
+
+#solapamiento {
+    margin-top: -60px !important;
+    position: relative; /*Para asegurarme que quede abajo*/
+    z-index: 1;
+}
+
+#promos {
+    margin-top: -60px !important;
+    position: relative;
+    z-index: 2; /* Un número mayor que el carrusel lo pone adelante */
+}
+
+/*Solo XS*/
+@media (max-width:576px) {
+    p {
+        font-size: 10pt;
+    }
+    button {
+        border-radius: 1rem;
+    }
+    #promos {
+        margin-top: 0 !important;
+    }
+    .scroll-horizontal-xs {
+        overflow-x: auto; /* Activa el scroll horizontal si el contenido se desborda */
+        overflow-y: hidden; /* Evita cualquier scroll vertical accidental */
+        -webkit-overflow-scrolling: touch; /* Hace que el deslizamiento sea suave en iPhone/iOS */
+    }
+
 }
 
