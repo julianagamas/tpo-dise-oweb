@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* Sobrescribe la fuente global de Bootstrap */
+    --bs-body-font-family: 'Barlow Condensed', sans-serif !important; 
+}
+
+/*------------------Pesos de barlow---------------------*/
+.barlow-condensed-semibold {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-condensed-light {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/*-----------------------------------------------------*/
+
+body, input, select, textarea {
+    color: #14184B !important;
+}
+
+a {
+    color: #14184B !important;
+}
+
+a:hover {
+    color: #0056b3 !important; 
+}
+
+#resaltado {
+    font-weight: 600;
+}
