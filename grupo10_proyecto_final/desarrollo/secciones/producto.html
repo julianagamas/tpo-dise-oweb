@@ -52,7 +52,7 @@
         </div>
     </header>
 
-    <div class="offcanvas offcanvas-end bg-darkblue d-md-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas offcanvas-end bg-darkblue d-md-none" tabindex="-1" id="offcanvasRight">
         <div class="offcanvas-header justify-content-end">
             <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -174,38 +174,36 @@
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <div class="row">
 
-                    <div class="col-12">
-                        <div class="d-flex align-items-center gap-2 justify-content-end my-4">
+                <div class="col-12">
+                    <div class="d-flex align-items-center gap-2 justify-content-end my-4">
                         
-                            <div class="border-red rounded-4 d-flex align-items-center overflow-hidden">
-                                <button type="button" id="btn-restar" class="btn px-3">
-                                    <i class="bi bi-trash3-fill" id="icono-restar"></i>
-                                </button>
-                                
-                                <span id="cantidad-producto" class="text-center text-red fw-bold px-2">1</span>
-                                
-                                <button type="button" id="btn-sumar" class="btn px-3">
-                                    <i class="bi bi-plus-lg text-red icon-bold"></i>
-                                </button>
-                            </div>
-
-                            <button type="button" id="btn-agregar" class="btn btn-red-alt rounded-4 px-4 d-flex justify-content-between align-items-center" data-precio-base="6950">
-                                <span class="font-light">Agregar</span>
-                                <span id="precio-total" class="font-bold ms-2">$6.950,00</span>
+                        <div class="border-red rounded-4 d-flex align-items-center overflow-hidden">
+                            <button type="button" id="btn-restar" class="btn px-3">
+                                <i class="bi bi-trash3-fill" id="icono-restar"></i>
                             </button>
-
+                                
+                            <span id="cantidad-producto" class="text-center text-red fw-bold px-2">1</span>
+                                
+                            <button type="button" id="btn-sumar" class="btn px-3">
+                                <i class="bi bi-plus-lg text-red icon-bold"></i>
+                            </button>
                         </div>
+
+                        <button type="button" id="btn-agregar" class="btn btn-red-alt rounded-4 px-4 d-flex justify-content-between align-items-center" data-precio-base="6950">
+                            <span class="font-light">Agregar</span>
+                            <span id="precio-total" class="font-bold ms-2">$6.950,00</span>
+                        </button>
+
                     </div>
-
                 </div>
-            </div>
-        </section>
 
-        <div class="offcanvas offcanvas-end px-3" tabindex="-1" id="carritoOverlay" aria-labelledby="carritoOverlayLabel">
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-end px-3" tabindex="-1" id="carritoOverlay">
             <div class="offcanvas-header">
                 <h2 class="offcanvas-title" id="carritoOverlayLabel">Carrito</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -254,7 +252,7 @@
                 </div>
 
                 <div class="col-2 text-white">
-                    <h5 class="m-0">Acceso directo</h5>
+                    <h4 class="fs-5 m-0">Acceso directo</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a class="text-decoration-none text-white" href="../index.html#locales" target="_blank">Locales</a></li> 
                         <li><a class="text-decoration-none text-white" href="#mispuntos" target="_blank">Mis Puntos</a></li> 
@@ -262,7 +260,7 @@
                     </ul>
                 </div>
                 <div class="col-2 text-white">
-                    <h5 class="m-0">Soporte y FAQ</h5>
+                    <h4 class="fs-5 m-0">Soporte y FAQ</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a class="text-decoration-none text-white" href="" target="_blank">Preguntas Frecuentes</a></li> 
                         <li><a class="text-decoration-none text-white" href="" target="_blank">Contacto</a></li> 
@@ -270,7 +268,7 @@
                     </ul>
                 </div>
                 <div class="col-2 text-white">
-                    <h5 class="m-0">La institución</h5>
+                    <h4 class="fs-5 m-0">La institución</h4>
                     <ul class="list-unstyled mb-0">
                         <li><a class="text-decoration-none text-white" href="https://maps.app.goo.gl/TzCRbD2wZfpf4xnB9" target="_blank">Lima 757, C1073</a></li> 
                         <li><a class="text-decoration-none text-white" href="#" target="_blank">Contacto</a></li> 
