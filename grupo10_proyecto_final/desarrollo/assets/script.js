@@ -1,3 +1,5 @@
+/*  ------------------LOGIN-------------------  */
+
 const CONTRASENIA = '12345';
 const formulario = document.getElementById("formLogin");
 
@@ -46,3 +48,20 @@ formulario.addEventListener("submit", (e) => {
         }, 2000);
     }
 });
+
+/* ------------------PRODUCTO------------------- */
+
+function cambiarFavorito(event) {
+    event.preventDefault(); /*Evita que la página intente navegar o recargarse*/
+        
+    const icono = document.getElementById("heart-icon");
+        
+    if (icono) {
+        /*Toggle*/
+        icono.classList.toggle("bi-suit-heart");
+        icono.classList.toggle("bi-suit-heart-fill");
+            
+    }
+}
+
+

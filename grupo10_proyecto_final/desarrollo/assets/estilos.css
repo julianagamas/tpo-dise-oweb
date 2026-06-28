@@ -173,4 +173,22 @@ p {
 
 }
 
+/*----------------PRODUCTO-----------------*/
+
+
+.return-custom {
+    width: 40px;
+    height: 40px;
+}
+
+#heart-custom {
+    width: 40px;
+    height: 40px;
+}
+
+.bi-suit-heart-fill {
+    color: #E01F2E;
+}
+
+
 
