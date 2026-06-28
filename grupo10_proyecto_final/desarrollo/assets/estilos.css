@@ -229,5 +229,12 @@ p {
     color: inherit !important; 
 }
 
+.img-carrito {
+    aspect-ratio: 1 / 1;
+    width: 4rem;
+    height: auto;
+    object-fit: cover;
+}
+
 
 
