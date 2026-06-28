@@ -15,12 +15,12 @@
     <script src="assets/script.js"></script>
     <header class="navbar navbar-expand-md sticky-top bg-white px-sm-4 py-2 px-3">
         <div class="container-fluid p-0"> <div class="ms-md-1">
-                <a href="#home" class="text-decoration-none">
-                    <img id="logo" src="assets/img/logo.avif" alt="logo">
+                <a href="#locales" class="text-decoration-none">
+                    <img class="logo" src="assets/img/logo.avif" alt="logo">
                 </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -59,17 +59,17 @@
         </div>
         <div class="offcanvas-body px-3">
             <ul class="nav flex-column text-center">
-                <li class="nav-item">
-                    <a href="#locales" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Locales</a>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#locales" class="nav-link d-inline-block px-2 border-bottom">Locales</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Puntos</a>
+                    <a href="" target="_blank" class="nav-link d-inline-block px-2 border-bottom">Puntos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Favoritos</a>
+                    <a href="" target="_blank" class="nav-link d-inline-block px-2 border-bottom">Favoritos</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#promos" class="nav-link d-inline-block px-2 border-bottom enlace-menu">Promos</a>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#promos" class="nav-link d-inline-block px-2 border-bottom">Promos</a>
                 </li>
             </ul>
         </div>
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
-                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Rústica">
                         <h2 class="fs-4 mt-3">Rústica</h2>
                         <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
                         <div class="d-flex gap-1">
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
-                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logokioscos.png" alt="Logo Kioscos">
                         <h2 class="fs-4 mt-3">Kioscos</h2>
                         <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
                         <div class="d-flex gap-1">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-5 col-md-2 d-flex flex-column align-items-center text-center bg-white shadow rounded-4 py-4 px-3">
-                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logorustica.jpg" alt="Logo Starbucks">
+                        <img class="img-fluid rounded-circle logo-local" src="assets/img/logobuffet.png" alt="Logo Buffet">
                         <h2 class="fs-4 mt-3">Buffet</h2>
                         <p class="d-none d-sm-block font-light mb-sm-1">Nivel de congestión:</p>
                         <div class="d-flex gap-1">
@@ -183,16 +183,16 @@
                         <h2>Promos del día</h2>
                     </div>
                 </div>
-                <div class="row flex-nowrap flex-sm-wrap scroll-horizontal-xs pb-3">
+                <div class="row flex-nowrap flex-sm-wrap scroll-horizontal-xs pb-3 px-2">
     
                     <div class="col-6 col-sm-4 col-md-4 p-1">
                         <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
                             
                             <a href="" class="d-block d-md-none">
-                                <img class="img-fluid contenedor-img" src="assets/img/producto-1.webp" alt="Producto 1">
+                                <img class="img-fluid w-100 img-tarjeta-mobile" src="assets/img/producto-1.webp" alt="Producto 1">
                             </a>
-                            <a href="" class="d-none d-md-block w-25 m-3">
-                                <img class="img-fluid rounded-4" src="assets/img/producto-1.webp" alt="Producto 1">
+                            <a href="" class="d-none d-md-block w-25 m-3 flex-shrink-0">
+                                <img class="img-fluid w-100 img-tarjeta-desktop rounded-4" src="assets/img/producto-1.webp" alt="Producto 1">
                             </a>
                             <div class="p-3">
                                 <h3 class="fs-4 mb-0">$6.950,00<span class="badge bg-red font-light">-50%</span></h3>
@@ -207,10 +207,10 @@
                         <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
                             
                             <a href="" class="d-block d-md-none">
-                                <img class="img-fluid contenedor-img" src="assets/img/producto-2.webp" alt="Producto 2">
+                                <img class="img-fluid w-100 img-tarjeta-mobile" src="assets/img/producto-2.webp" alt="Producto 2">
                             </a>
-                            <a href="" class="d-none d-md-block w-25 m-3">
-                                <img class="img-fluid rounded-4" src="assets/img/producto-2.webp" alt="Producto 2">
+                            <a href="" class="d-none d-md-block w-25 m-3 flex-shrink-0">
+                                <img class="img-fluid w-100 img-tarjeta-desktop rounded-4" src="assets/img/producto-2.webp" alt="Producto 2">
                             </a>
                             <div class="p-3">
                                 <h3 class="fs-4 mb-0">$6.950,00<span class="badge bg-red font-light">-50%</span></h3>
@@ -225,10 +225,10 @@
                         <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
                             
                             <a href="" class="d-block d-md-none">
-                                <img class="img-fluid contenedor-img" src="assets/img/producto-3.webp" alt="Producto 3">
+                                <img class="img-fluid w-100 img-tarjeta-mobile" src="assets/img/producto-3.webp" alt="Producto 3">
                             </a>
-                            <a href="" class="d-none d-md-block w-25 m-3">
-                                <img class="img-fluid rounded-4" src="assets/img/producto-3.webp" alt="Producto 3">
+                            <a href="" class="d-none d-md-block w-25 m-3 flex-shrink-0">
+                                <img class="img-fluid w-100 img-tarjeta-desktop rounded-4" src="assets/img/producto-3.webp" alt="Producto 3">
                             </a>
                             <div class="p-3">
                                 <h3 class="fs-4 mb-0">$11.340,00<span class="badge bg-red font-light">-30%</span></h3>
@@ -243,10 +243,10 @@
                         <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
                             
                             <a href="" class="d-block d-md-none">
-                                <img class="img-fluid contenedor-img" src="assets/img/producto-4.webp" alt="Producto 3">
+                                <img class="img-fluid w-100 img-tarjeta-mobile" src="assets/img/producto-4.png" alt="Producto 4">
                             </a>
-                            <a href="" class="d-none d-md-block w-25 m-3">
-                                <img class="img-fluid rounded-4" src="assets/img/producto-4.webp" alt="Producto 3">
+                            <a href="" class="d-none d-md-block w-25 m-3 flex-shrink-0">
+                                <img class="img w-100 img-tarjeta-desktop rounded-4" src="assets/img/producto-4.png" alt="Producto 4">
                             </a>
                             <div class="p-3">
                                 <h3 class="fs-4 mb-0">$9.450,00<span class="badge bg-red font-light">-30%</span></h3>
@@ -257,10 +257,145 @@
                         </div>
                     </div>
 
+                    <div class="col-6 col-sm-4 col-md-4 p-1">
+                        <div class="bg-white h-100 shadow rounded-4 d-flex flex-column flex-md-row justify-content-start align-items-center overflow-hidden">
+                            
+                            <a href="" class="d-block d-md-none">
+                                <img class="img-fluid w-100 img-tarjeta-mobile" src="assets/img/producto-5.png" alt="Producto 5">
+                            </a>
+                            <a href="" class="d-none d-md-block w-25 m-3 flex-shrink-0">
+                                <img class="img w-100 img-tarjeta-desktop rounded-4" src="assets/img/producto-5.png" alt="Producto 5">
+                            </a>
+                            <div class="p-3">
+                                <h3 class="fs-4 mb-0">$8.800,00<span class="badge bg-red font-light">-20%</span></h3>
+                                <p class="mb-1 text-decoration-line-through">$11.000,00</p>
+                                <p class="font-light mb-0 mb-sm-1">3 Scones dulces</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row d-none d-md-block text-center m-3">
+                    <a href="#locales" class="text-decoration-underline text-muted">Ver todos los locales</a>
                 </div>
             </div>
         </section>
 
+        <section class="py-3">
+            <div class="container">
+                <div class="row m-3">
+                    <div class="col-12 d-flex flex-column align-items-center text-center">
+                        <h2>¿Cómo funciona?</h2>
+                    </div>
+                </div>
+                <div class="row bg-white shadow d-flex justify-content-center rounded-4 p-4">
+                    <div class="col-12 col-sm-6 col-md-3 col-md-2 d-flex flex-column align-items-center">
+                        <div class="d-flex">
+                            <div class="bg-darkblue p-4 rounded-4 text-center my-3 box-pasos">
+                                <h4 class="text-white m-0">Elegí tu local</h4>
+                            </div>
+                            <div class="ms-2 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-arrow-right-circle d-none d-sm-block fs-2 text-darkblue"></i>
+                            </div>
+                        </div>
+                        <p class="lh-sm mx-5 mx-sm-0">
+                            Starbucks, Rústica, del Buffet o los
+                            Kioscos, ¡tenés muchas opciones para elegir!
+                        </p>
+                        <div>
+                            <i class="bi bi-arrow-down-circle d-sm-none fs-2 text-darkblue"></i>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                        <div class="d-flex">
+                            <div class="bg-darkblue p-4 rounded-4 text-center my-3 box-pasos">
+                                <h4 class="text-white m-0">Seleccioná tu horario</h4>
+                            </div>
+                            <div class="ms-2 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-arrow-right-circle d-none d-sm-block fs-2 text-darkblue"></i>
+                            </div>
+                        </div>
+                        <p class="lh-sm mx-5 mx-sm-0">
+                            Marcás el Turno en el que vas a consumir y te ofrecemos un amplio
+                            rango de horarios para que elijas el que mejor se ajusta a vos.
+                        </p>
+                        <div>
+                            <i class="bi bi-arrow-down-circle d-sm-none fs-2 text-darkblue"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                        <div class="d-flex">
+                            <div class="bg-darkblue p-4 rounded-4 text-center my-3 box-pasos">
+                                <h4 class="text-white m-0">Pedí lo que quieras</h4>
+                            </div>
+                            <div class="ms-2 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-arrow-right-circle d-none d-sm-block fs-2 text-darkblue"></i>
+                            </div>
+                        </div>
+                        <p class="lh-sm mx-5 mx-sm-0">
+                            Elegí el producto que más te guste y seguí con el proceso de compra.
+                            El pago se realiza <span class="font-bold">únicamente a través de billeteras virtuales</span>.
+                            Tenemos Mercado Pago.
+                        </p>
+                        <div>
+                            <i class="bi bi-arrow-down-circle d-sm-none fs-2 text-darkblue"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 d-flex flex-column align-items-center">
+                        <div class="d-flex">
+                            <div class="bg-darkblue p-4 rounded-4 text-center my-3 box-pasos">
+                                <h4 class="text-white m-0">Retirá en el local</h4>
+                            </div>
+                        </div>
+                        <p class="lh-sm mx-5 mx-sm-0">
+                            Contamos con un mostrador de retiro exclusivo y un sistema
+                            de retiro por QR, que figurará una vez hayamos confirmado tu compra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="d-none d-sm-block py-3 px-5 px-sm-0 bg-darkblue">
+        <div class="container-fluid p-4">
+            <div class="row align-items-start">
+
+                <div class="col-2 ms-2 ms-md-0">
+                    <a href="#locales">
+                        <img src="assets/img/logoalt.png" class="img-fluid w-75 ps-md-5" alt="logo">
+                    </a>
+                </div>
+
+                <div class="col-2 text-white">
+                    <h5 class="m-0">Acceso directo</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="text-decoration-none text-white" href="#locales" target="_blank">Locales</a></li> 
+                        <li><a class="text-decoration-none text-white" href="#mispuntos" target="_blank">Mis Puntos</a></li> 
+                        <li><a class="text-decoration-none text-white" href="#favoritos" target="_blank">Favoritos</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 text-white">
+                    <h5 class="m-0">Soporte y FAQ</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="text-decoration-none text-white" href="" target="_blank">Preguntas Frecuentes</a></li> 
+                        <li><a class="text-decoration-none text-white" href="" target="_blank">Contacto</a></li> 
+                        <li><a class="text-decoration-none text-white" href="" target="_blank">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-2 text-white">
+                    <h5 class="m-0">La institución</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a class="text-decoration-none text-white" href="https://maps.app.goo.gl/TzCRbD2wZfpf4xnB9" target="_blank">Lima 757, C1073</a></li> 
+                        <li><a class="text-decoration-none text-white" href="#" target="_blank">Contacto</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
 </body>
 </html>

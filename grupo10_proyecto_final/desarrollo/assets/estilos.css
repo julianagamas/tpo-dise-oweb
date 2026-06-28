@@ -24,6 +24,11 @@
 
 /*-----------------------------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px;
+}
+
 * {
     color: #14184B;
 }
@@ -70,13 +75,24 @@ p {
     background-color: #E01F2E !important;
 }
 
-.contenedor-img {
-    height: 50%;
-    width: 100%;
+.img-tarjeta-mobile {
+    width: 100% !important;
+    height: 160px !important;   
+    object-fit: cover !important;
+    display: block;   /* Hace el recorte mágico para que no se deforme el Lemon Cake ni el Coco */
 }
 
-.contenedor-img img {
-    object-fit: cover; /* ¡Esta es la clave! */
+.img-tarjeta-desktop {
+    aspect-ratio: 1 / 1; /* Fuerza a que la imagen sea perfectamente cuadrada (proporción 1 a 1) */
+    object-fit: cover; 
+}
+
+.box-pasos {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .font-bold {
@@ -87,9 +103,8 @@ p {
     font-weight: 300;
 }
 
-.enlace-menu.active {
-    border-color: #E01F2E;
-    color: #E01F2E !important;
+.text-red {
+    color: #E01F2E;
 }
 
 .logo-local {
@@ -105,7 +120,7 @@ p {
 }
 
 
-#logo {
+.logo {
     border-radius: 3rem; /*Porque la imagen orriginal tenia los bordes redondeados y las esquinas se ven negras*/
     height: 3.5rem; 
     width: auto; 
