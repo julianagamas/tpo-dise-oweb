@@ -105,7 +105,11 @@ p {
 }
 
 .text-red {
-    color: #E01F2E;
+    color: #E01F2E !important;
+}
+
+.border-red {
+    border: 1px solid #E01F2E;
 }
 
 .logo-local {
@@ -188,6 +192,41 @@ p {
 
 .bi-suit-heart-fill {
     color: #E01F2E;
+}
+
+/* Ajuste de tamaño y borde */
+.custom-radio {
+    width: 1.5em !important;
+    height: 1.5em !important;
+    border: 2px solid #0f1743 !important; 
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Grosor extra a iconos Bootstrap*/
+.icon-bold {
+    -webkit-text-stroke: 1px currentColor;
+}
+
+#icono-restar {
+    color: #E01F2E !important;
+}
+
+.btn.btn-red-alt {
+    border-color: #E01F2E;
+    color: white !important;
+    background-color: #E01F2E;
+}
+
+.btn.btn-red-alt:hover{
+    border-color: #E01F2E;
+    color: #E01F2E !important;
+    background-color: white;
+}
+
+/* Para que los span hereden el color que marca el boton y evitar que Bootstrap lo pise*/
+.btn.btn-red-alt span {
+    color: inherit !important; 
 }
 
 
