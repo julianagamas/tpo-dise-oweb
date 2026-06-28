@@ -6,6 +6,7 @@
 }
 
 /*------------------Pesos de barlow---------------------*/
+
 .barlow-condensed-semibold {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 600;
@@ -119,12 +120,12 @@ p {
     background-color: #EEE5DC;
 }
 
-
 .logo {
     border-radius: 3rem; /*Porque la imagen orriginal tenia los bordes redondeados y las esquinas se ven negras*/
     height: 3.5rem; 
     width: auto; 
 }
+
 
 #locales {
     position: relative;
@@ -161,4 +162,15 @@ p {
     }
 
 }
+
+/*-----------------LOGIN--------------------*/
+
+@media (min-width:576px) {
+    #bg-login {
+        background-image: url(img/frente-monserrat-noche-ajustada.avif);
+        background-size: cover;
+    }
+
+}
+
 
